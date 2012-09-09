@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		A526C3180AF52DA5009D5282 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A526C3170AF52DA5009D5282 /* Sparkle.framework */; };
+		A526C3DE0AF52DC1009D5282 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A526C3170AF52DA5009D5282 /* Sparkle.framework */; };
+		A526C4380AF535AE009D5282 /* EditTimes.nib in Resources */ = {isa = PBXBuildFile; fileRef = A526C4360AF535AE009D5282 /* EditTimes.nib */; };
+		A526C43C0AF535B8009D5282 /* TSEditTimesController.m in Sources */ = {isa = PBXBuildFile; fileRef = A526C43A0AF535B8009D5282 /* TSEditTimesController.m */; };
+		A526C45A0AF538F8009D5282 /* EditTimesButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A526C4590AF538F8009D5282 /* EditTimesButton.png */; };
+		A526C49E0AF53BB4009D5282 /* GetInfo.tiff in Resources */ = {isa = PBXBuildFile; fileRef = A526C49D0AF53BB4009D5282 /* GetInfo.tiff */; };
+		A535CB9C0A6C2FB80084EDF6 /* TSMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = A535CB9B0A6C2FB80084EDF6 /* TSMainController.m */; };
+		A535CBA30A6C329E0084EDF6 /* TSPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = A535CBA20A6C329E0084EDF6 /* TSPeriod.m */; };
+		A535CBAE0A6C344D0084EDF6 /* TSPeriodDay.m in Sources */ = {isa = PBXBuildFile; fileRef = A535CBAD0A6C344D0084EDF6 /* TSPeriodDay.m */; };
+		A535CD5C0A6C46C80084EDF6 /* Delete.tif in Resources */ = {isa = PBXBuildFile; fileRef = A535CD5B0A6C46C80084EDF6 /* Delete.tif */; };
+		A535CEBA0A6C58FE0084EDF6 /* Stop.tif in Resources */ = {isa = PBXBuildFile; fileRef = A535CEB80A6C58FE0084EDF6 /* Stop.tif */; };
+		A535CEBB0A6C58FE0084EDF6 /* Start.tif in Resources */ = {isa = PBXBuildFile; fileRef = A535CEB90A6C58FE0084EDF6 /* Start.tif */; };
+		A535CEF60A6C5B390084EDF6 /* Earnings.tif in Resources */ = {isa = PBXBuildFile; fileRef = A535CEF50A6C5B390084EDF6 /* Earnings.tif */; };
+		A535CF1F0A6C5C730084EDF6 /* ProjectInfo.nib in Resources */ = {isa = PBXBuildFile; fileRef = A535CF1D0A6C5C730084EDF6 /* ProjectInfo.nib */; };
+		A535CF250A6C5C920084EDF6 /* TSInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = A535CF240A6C5C920084EDF6 /* TSInfoController.m */; };
+		A535CF2A0A6C5CC30084EDF6 /* TSProject.m in Sources */ = {isa = PBXBuildFile; fileRef = A535CF290A6C5CC30084EDF6 /* TSProject.m */; };
+		A535D0750A6C69B80084EDF6 /* Stop2.tif in Resources */ = {isa = PBXBuildFile; fileRef = A535D0740A6C69B80084EDF6 /* Stop2.tif */; };
+		A535D3620A6C7F9D0084EDF6 /* ImageAndTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A535D3610A6C7F9D0084EDF6 /* ImageAndTextCell.m */; };
+		A535D3720A6C80FF0084EDF6 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = A535D3700A6C80FF0084EDF6 /* clock.png */; };
+		A535D3730A6C80FF0084EDF6 /* clock_red.png in Resources */ = {isa = PBXBuildFile; fileRef = A535D3710A6C80FF0084EDF6 /* clock_red.png */; };
+		A535D3750A6C81A80084EDF6 /* time.png in Resources */ = {isa = PBXBuildFile; fileRef = A535D3740A6C81A80084EDF6 /* time.png */; };
+		A535D4620A6C94C20084EDF6 /* Excel32.png in Resources */ = {isa = PBXBuildFile; fileRef = A535D4600A6C94C20084EDF6 /* Excel32.png */; };
+		A535D4630A6C94C20084EDF6 /* iCal32.png in Resources */ = {isa = PBXBuildFile; fileRef = A535D4610A6C94C20084EDF6 /* iCal32.png */; };
+		A535D5B90A6CF30C0084EDF6 /* circle_add.tif in Resources */ = {isa = PBXBuildFile; fileRef = A535D5B80A6CF30C0084EDF6 /* circle_add.tif */; };
+		A535D63E0A6CF8200084EDF6 /* pencil.tif in Resources */ = {isa = PBXBuildFile; fileRef = A535D63D0A6CF8200084EDF6 /* pencil.tif */; };
+		A535D6580A6CF90B0084EDF6 /* TSProjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = A535D6560A6CF90B0084EDF6 /* TSProjectController.m */; };
+		A535D66D0A6CFA100084EDF6 /* ProjectView.nib in Resources */ = {isa = PBXBuildFile; fileRef = A535D66B0A6CFA100084EDF6 /* ProjectView.nib */; };
+		A535D93C0A6D09EA0084EDF6 /* circle_block.tif in Resources */ = {isa = PBXBuildFile; fileRef = A535D93B0A6D09EA0084EDF6 /* circle_block.tif */; };
+		A56F5CC00A6DBAF100576220 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56F5CBF0A6DBAF100576220 /* IOKit.framework */; };
+		A57DD41A0AA714BF007772EA /* Timeous red.icns in Resources */ = {isa = PBXBuildFile; fileRef = A57DD4180AA714BF007772EA /* Timeous red.icns */; };
+		A57DD41B0AA714C0007772EA /* Timeous.icns in Resources */ = {isa = PBXBuildFile; fileRef = A57DD4190AA714BF007772EA /* Timeous.icns */; };
+		A5841EDB0C2F381E003D0B79 /* Projects.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = A5841EDA0C2F381E003D0B79 /* Projects.xcdatamodel */; };
+		A58420C00C2F5C65003D0B79 /* NSToolbarAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A58420BE0C2F5C65003D0B79 /* NSToolbarAdditions.m */; };
+		A597221B0AB31F2A007BBFC1 /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = A597221A0AB31F2A007BBFC1 /* text.png */; };
+		A59722C60AB3274C007BBFC1 /* NSStringXtras.m in Sources */ = {isa = PBXBuildFile; fileRef = A59722C40AB3274B007BBFC1 /* NSStringXtras.m */; };
+		A5E90AE90D0B1AE000AA70A3 /* TSAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E90AE80D0B1AE000AA70A3 /* TSAppController.m */; };
+		A5E90AED0D0B1AF500AA70A3 /* TSDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E90AEC0D0B1AF500AA70A3 /* TSDataController.m */; };
+		A5E90C150D0B266300AA70A3 /* ProjectsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E90C130D0B266300AA70A3 /* ProjectsWindow.xib */; };
+		A5E90DAC0D0B3E5F00AA70A3 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E90DAA0D0B3E5F00AA70A3 /* Preferences.xib */; };
+		A5E90E7E0D0B483E00AA70A3 /* PSMTabBarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E90E7D0D0B483E00AA70A3 /* PSMTabBarControl.framework */; };
+		A5E90E800D0B485200AA70A3 /* PSMTabBarControl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A5E90E7D0D0B483E00AA70A3 /* PSMTabBarControl.framework */; };
+		A5FB8C250A73F56A00B543E8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A5FB8C240A73F56A00B543E8 /* Credits.rtf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A535D54F0A6CEC890084EDF6 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A5E90E800D0B485200AA70A3 /* PSMTabBarControl.framework in Copy Frameworks */,
+				A526C3DE0AF52DC1009D5282 /* Sparkle.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* Timeous_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timeous_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Timeous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timeous.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A526C3170AF52DA5009D5282 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		A526C4370AF535AE009D5282 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/EditTimes.nib; sourceTree = "<group>"; };
+		A526C4390AF535B8009D5282 /* TSEditTimesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEditTimesController.h; sourceTree = "<group>"; };
+		A526C43A0AF535B8009D5282 /* TSEditTimesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSEditTimesController.m; sourceTree = "<group>"; };
+		A526C4590AF538F8009D5282 /* EditTimesButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EditTimesButton.png; sourceTree = "<group>"; };
+		A526C49D0AF53BB4009D5282 /* GetInfo.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GetInfo.tiff; sourceTree = "<group>"; };
+		A535CB9A0A6C2FB80084EDF6 /* TSMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSMainController.h; sourceTree = "<group>"; };
+		A535CB9B0A6C2FB80084EDF6 /* TSMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSMainController.m; sourceTree = "<group>"; };
+		A535CBA10A6C329E0084EDF6 /* TSPeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPeriod.h; sourceTree = "<group>"; };
+		A535CBA20A6C329E0084EDF6 /* TSPeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPeriod.m; sourceTree = "<group>"; };
+		A535CBAC0A6C344D0084EDF6 /* TSPeriodDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPeriodDay.h; sourceTree = "<group>"; };
+		A535CBAD0A6C344D0084EDF6 /* TSPeriodDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPeriodDay.m; sourceTree = "<group>"; };
+		A535CD5B0A6C46C80084EDF6 /* Delete.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Delete.tif; sourceTree = "<group>"; };
+		A535CEB80A6C58FE0084EDF6 /* Stop.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Stop.tif; sourceTree = "<group>"; };
+		A535CEB90A6C58FE0084EDF6 /* Start.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Start.tif; sourceTree = "<group>"; };
+		A535CEF50A6C5B390084EDF6 /* Earnings.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Earnings.tif; sourceTree = "<group>"; };
+		A535CF1E0A6C5C730084EDF6 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ProjectInfo.nib; sourceTree = "<group>"; };
+		A535CF230A6C5C920084EDF6 /* TSInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSInfoController.h; sourceTree = "<group>"; };
+		A535CF240A6C5C920084EDF6 /* TSInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSInfoController.m; sourceTree = "<group>"; };
+		A535CF280A6C5CC30084EDF6 /* TSProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProject.h; sourceTree = "<group>"; };
+		A535CF290A6C5CC30084EDF6 /* TSProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProject.m; sourceTree = "<group>"; };
+		A535D0740A6C69B80084EDF6 /* Stop2.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Stop2.tif; sourceTree = "<group>"; };
+		A535D3600A6C7F9D0084EDF6 /* ImageAndTextCell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ImageAndTextCell.h; sourceTree = "<group>"; };
+		A535D3610A6C7F9D0084EDF6 /* ImageAndTextCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ImageAndTextCell.m; sourceTree = "<group>"; };
+		A535D3700A6C80FF0084EDF6 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		A535D3710A6C80FF0084EDF6 /* clock_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock_red.png; sourceTree = "<group>"; };
+		A535D3740A6C81A80084EDF6 /* time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = time.png; sourceTree = "<group>"; };
+		A535D4600A6C94C20084EDF6 /* Excel32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Excel32.png; sourceTree = "<group>"; };
+		A535D4610A6C94C20084EDF6 /* iCal32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iCal32.png; sourceTree = "<group>"; };
+		A535D5B80A6CF30C0084EDF6 /* circle_add.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = circle_add.tif; sourceTree = "<group>"; };
+		A535D63D0A6CF8200084EDF6 /* pencil.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = pencil.tif; sourceTree = "<group>"; };
+		A535D6550A6CF90B0084EDF6 /* TSProjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSProjectController.h; sourceTree = "<group>"; };
+		A535D6560A6CF90B0084EDF6 /* TSProjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProjectController.m; sourceTree = "<group>"; };
+		A535D66C0A6CFA100084EDF6 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ProjectView.nib; sourceTree = "<group>"; };
+		A535D93B0A6D09EA0084EDF6 /* circle_block.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = circle_block.tif; sourceTree = "<group>"; };
+		A56F5CBF0A6DBAF100576220 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		A57DD4180AA714BF007772EA /* Timeous red.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Timeous red.icns"; sourceTree = "<group>"; };
+		A57DD4190AA714BF007772EA /* Timeous.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Timeous.icns; sourceTree = "<group>"; };
+		A5841EDA0C2F381E003D0B79 /* Projects.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Projects.xcdatamodel; sourceTree = "<group>"; };
+		A58420BD0C2F5C65003D0B79 /* NSToolbarAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSToolbarAdditions.h; sourceTree = "<group>"; };
+		A58420BE0C2F5C65003D0B79 /* NSToolbarAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSToolbarAdditions.m; sourceTree = "<group>"; };
+		A597221A0AB31F2A007BBFC1 /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text.png; sourceTree = "<group>"; };
+		A59722C30AB3274B007BBFC1 /* NSStringXtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringXtras.h; sourceTree = "<group>"; };
+		A59722C40AB3274B007BBFC1 /* NSStringXtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringXtras.m; sourceTree = "<group>"; };
+		A5E90AE70D0B1AE000AA70A3 /* TSAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSAppController.h; sourceTree = "<group>"; };
+		A5E90AE80D0B1AE000AA70A3 /* TSAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSAppController.m; sourceTree = "<group>"; };
+		A5E90AEB0D0B1AF500AA70A3 /* TSDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSDataController.h; sourceTree = "<group>"; };
+		A5E90AEC0D0B1AF500AA70A3 /* TSDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSDataController.m; sourceTree = "<group>"; };
+		A5E90C140D0B266300AA70A3 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ProjectsWindow.xib; sourceTree = "<group>"; };
+		A5E90D8E0D0B3D8800AA70A3 /* TSUserDefaultKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSUserDefaultKeys.h; sourceTree = "<group>"; };
+		A5E90DAB0D0B3E5F00AA70A3 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
+		A5E90E7D0D0B483E00AA70A3 /* PSMTabBarControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PSMTabBarControl.framework; path = PSMTabBarControl/build/Release/PSMTabBarControl.framework; sourceTree = "<group>"; };
+		A5FB8C240A73F56A00B543E8 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				A56F5CC00A6DBAF100576220 /* IOKit.framework in Frameworks */,
+				A526C3180AF52DA5009D5282 /* Sparkle.framework in Frameworks */,
+				A5E90E7E0D0B483E00AA70A3 /* PSMTabBarControl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A5E90D8E0D0B3D8800AA70A3 /* TSUserDefaultKeys.h */,
+				A5E90AE70D0B1AE000AA70A3 /* TSAppController.h */,
+				A5E90AE80D0B1AE000AA70A3 /* TSAppController.m */,
+				A535CB9A0A6C2FB80084EDF6 /* TSMainController.h */,
+				A535CB9B0A6C2FB80084EDF6 /* TSMainController.m */,
+				A5E90AEB0D0B1AF500AA70A3 /* TSDataController.h */,
+				A5E90AEC0D0B1AF500AA70A3 /* TSDataController.m */,
+				A535D6550A6CF90B0084EDF6 /* TSProjectController.h */,
+				A535D6560A6CF90B0084EDF6 /* TSProjectController.m */,
+				A535CF230A6C5C920084EDF6 /* TSInfoController.h */,
+				A535CF240A6C5C920084EDF6 /* TSInfoController.m */,
+				A526C4390AF535B8009D5282 /* TSEditTimesController.h */,
+				A526C43A0AF535B8009D5282 /* TSEditTimesController.m */,
+				A535CF420A6C5D110084EDF6 /* Project */,
+				A5841F570C2F4032003D0B79 /* Categories */,
+				A5841F580C2F4041003D0B79 /* UI */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5E90E7D0D0B483E00AA70A3 /* PSMTabBarControl.framework */,
+				A526C3170AF52DA5009D5282 /* Sparkle.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				A56F5CBF0A6DBAF100576220 /* IOKit.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Timeous.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Timeous */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				A584233F0C300010003D0B79 /* Models */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Timeous;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Timeous_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5FB8C2A0A73F5CA00B543E8 /* Images */,
+				A5FB8C240A73F56A00B543E8 /* Credits.rtf */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				A535D66B0A6CFA100084EDF6 /* ProjectView.nib */,
+				A535CF1D0A6C5C730084EDF6 /* ProjectInfo.nib */,
+				A526C4360AF535AE009D5282 /* EditTimes.nib */,
+				A5E90C130D0B266300AA70A3 /* ProjectsWindow.xib */,
+				A5E90DAA0D0B3E5F00AA70A3 /* Preferences.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A535CF420A6C5D110084EDF6 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				A535CF280A6C5CC30084EDF6 /* TSProject.h */,
+				A535CF290A6C5CC30084EDF6 /* TSProject.m */,
+				A535CBA10A6C329E0084EDF6 /* TSPeriod.h */,
+				A535CBA20A6C329E0084EDF6 /* TSPeriod.m */,
+				A535CBAC0A6C344D0084EDF6 /* TSPeriodDay.h */,
+				A535CBAD0A6C344D0084EDF6 /* TSPeriodDay.m */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		A5841F570C2F4032003D0B79 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A59722C30AB3274B007BBFC1 /* NSStringXtras.h */,
+				A59722C40AB3274B007BBFC1 /* NSStringXtras.m */,
+				A58420BD0C2F5C65003D0B79 /* NSToolbarAdditions.h */,
+				A58420BE0C2F5C65003D0B79 /* NSToolbarAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		A5841F580C2F4041003D0B79 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A535D3600A6C7F9D0084EDF6 /* ImageAndTextCell.h */,
+				A535D3610A6C7F9D0084EDF6 /* ImageAndTextCell.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		A584233F0C300010003D0B79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5841EDA0C2F381E003D0B79 /* Projects.xcdatamodel */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A5FB8C2A0A73F5CA00B543E8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A526C49D0AF53BB4009D5282 /* GetInfo.tiff */,
+				A526C4590AF538F8009D5282 /* EditTimesButton.png */,
+				A597221A0AB31F2A007BBFC1 /* text.png */,
+				A57DD4190AA714BF007772EA /* Timeous.icns */,
+				A57DD4180AA714BF007772EA /* Timeous red.icns */,
+				A535D93B0A6D09EA0084EDF6 /* circle_block.tif */,
+				A535D63D0A6CF8200084EDF6 /* pencil.tif */,
+				A535D5B80A6CF30C0084EDF6 /* circle_add.tif */,
+				A535D4600A6C94C20084EDF6 /* Excel32.png */,
+				A535D4610A6C94C20084EDF6 /* iCal32.png */,
+				A535D3740A6C81A80084EDF6 /* time.png */,
+				A535D3700A6C80FF0084EDF6 /* clock.png */,
+				A535D3710A6C80FF0084EDF6 /* clock_red.png */,
+				A535CEB80A6C58FE0084EDF6 /* Stop.tif */,
+				A535D0740A6C69B80084EDF6 /* Stop2.tif */,
+				A535CEB90A6C58FE0084EDF6 /* Start.tif */,
+				A535CD5B0A6C46C80084EDF6 /* Delete.tif */,
+				A535CEF50A6C5B390084EDF6 /* Earnings.tif */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Timeous */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Timeous" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				A535D54F0A6CEC890084EDF6 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Timeous;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Timeous;
+			productReference = 8D1107320486CEB800E47090 /* Timeous.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Timeous" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Timeous */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Timeous */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				A535CD5C0A6C46C80084EDF6 /* Delete.tif in Resources */,
+				A535CEBA0A6C58FE0084EDF6 /* Stop.tif in Resources */,
+				A535CEBB0A6C58FE0084EDF6 /* Start.tif in Resources */,
+				A535CEF60A6C5B390084EDF6 /* Earnings.tif in Resources */,
+				A535CF1F0A6C5C730084EDF6 /* ProjectInfo.nib in Resources */,
+				A535D0750A6C69B80084EDF6 /* Stop2.tif in Resources */,
+				A535D3720A6C80FF0084EDF6 /* clock.png in Resources */,
+				A535D3730A6C80FF0084EDF6 /* clock_red.png in Resources */,
+				A535D3750A6C81A80084EDF6 /* time.png in Resources */,
+				A535D4620A6C94C20084EDF6 /* Excel32.png in Resources */,
+				A535D4630A6C94C20084EDF6 /* iCal32.png in Resources */,
+				A535D5B90A6CF30C0084EDF6 /* circle_add.tif in Resources */,
+				A535D63E0A6CF8200084EDF6 /* pencil.tif in Resources */,
+				A535D66D0A6CFA100084EDF6 /* ProjectView.nib in Resources */,
+				A535D93C0A6D09EA0084EDF6 /* circle_block.tif in Resources */,
+				A5FB8C250A73F56A00B543E8 /* Credits.rtf in Resources */,
+				A57DD41A0AA714BF007772EA /* Timeous red.icns in Resources */,
+				A57DD41B0AA714C0007772EA /* Timeous.icns in Resources */,
+				A597221B0AB31F2A007BBFC1 /* text.png in Resources */,
+				A526C4380AF535AE009D5282 /* EditTimes.nib in Resources */,
+				A526C45A0AF538F8009D5282 /* EditTimesButton.png in Resources */,
+				A526C49E0AF53BB4009D5282 /* GetInfo.tiff in Resources */,
+				A5E90C150D0B266300AA70A3 /* ProjectsWindow.xib in Resources */,
+				A5E90DAC0D0B3E5F00AA70A3 /* Preferences.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				A535CB9C0A6C2FB80084EDF6 /* TSMainController.m in Sources */,
+				A535CBA30A6C329E0084EDF6 /* TSPeriod.m in Sources */,
+				A535CBAE0A6C344D0084EDF6 /* TSPeriodDay.m in Sources */,
+				A535CF250A6C5C920084EDF6 /* TSInfoController.m in Sources */,
+				A535CF2A0A6C5CC30084EDF6 /* TSProject.m in Sources */,
+				A535D3620A6C7F9D0084EDF6 /* ImageAndTextCell.m in Sources */,
+				A535D6580A6CF90B0084EDF6 /* TSProjectController.m in Sources */,
+				A59722C60AB3274C007BBFC1 /* NSStringXtras.m in Sources */,
+				A526C43C0AF535B8009D5282 /* TSEditTimesController.m in Sources */,
+				A5841EDB0C2F381E003D0B79 /* Projects.xcdatamodel in Sources */,
+				A58420C00C2F5C65003D0B79 /* NSToolbarAdditions.m in Sources */,
+				A5E90AE90D0B1AE000AA70A3 /* TSAppController.m in Sources */,
+				A5E90AED0D0B1AF500AA70A3 /* TSDataController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		A526C4360AF535AE009D5282 /* EditTimes.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A526C4370AF535AE009D5282 /* English */,
+			);
+			name = EditTimes.nib;
+			sourceTree = "<group>";
+		};
+		A535CF1D0A6C5C730084EDF6 /* ProjectInfo.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A535CF1E0A6C5C730084EDF6 /* English */,
+			);
+			name = ProjectInfo.nib;
+			sourceTree = "<group>";
+		};
+		A535D66B0A6CFA100084EDF6 /* ProjectView.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A535D66C0A6CFA100084EDF6 /* English */,
+			);
+			name = ProjectView.nib;
+			sourceTree = "<group>";
+		};
+		A5E90C130D0B266300AA70A3 /* ProjectsWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E90C140D0B266300AA70A3 /* English */,
+			);
+			name = ProjectsWindow.xib;
+			sourceTree = "<group>";
+		};
+		A5E90DAA0D0B3E5F00AA70A3 /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E90DAB0D0B3E5F00AA70A3 /* English */,
+			);
+			name = Preferences.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"\"$(SRCROOT)/PSMTabBarControl/build/Release\"",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Timeous;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"\"$(SRCROOT)/PSMTabBarControl/build/Release\"",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Timeous;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Timeous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Timeous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

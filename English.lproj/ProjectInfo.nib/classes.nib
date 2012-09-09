@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {close = id; }; 
+            CLASS = TSInfoController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {nameField = NSTextField; rateField = NSTextField; taxField = NSTextField; }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}
