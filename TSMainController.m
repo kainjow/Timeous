@@ -408,7 +408,7 @@
 {
 	if (returnCode == NSOKButton)
 	{
-		[self importTimeCardPlist:[panel filename]];
+		[self importTimeCardPlist:[[panel URL] path]];
 		
 		[[[self currentController] outlineView] reloadData];
 		[[self currentController] updateEarningsField];
@@ -486,7 +486,7 @@
 - (void)exportText:(id)sender
 {
 	NSSavePanel *savePanel = [NSSavePanel savePanel];
-	[savePanel setRequiredFileType:@"txt"];
+	[savePanel setAllowedFileTypes:[NSArray arrayWithObject:@"txt"]];
 	[savePanel beginSheetForDirectory:nil
 								 file:[[self currentProject] valueForKey:TSProjectNameValue]
 					   modalForWindow:[self window]
@@ -501,7 +501,7 @@
 	{
 		NSString *projectText = [self exportCurrentProjectAsText];
 		NSError *err = nil;
-		[projectText writeToFile:[sheet filename] atomically:YES encoding:NSUTF8StringEncoding error:&err];
+		[projectText writeToFile:[[sheet URL] path] atomically:YES encoding:NSUTF8StringEncoding error:&err];
 		if (err)
 			[NSApp presentError:err];
 	}
@@ -723,7 +723,7 @@
 	if ([fm fileExistsAtPath:moveToPath])
 		NSLog(@"ERROR: File exists at: %@", moveToPath);
 	else
-		[fm movePath:path toPath:moveToPath handler:nil];
+        [fm moveItemAtPath:path toPath:moveToPath error:nil];
 
 	[self saveData];
 }

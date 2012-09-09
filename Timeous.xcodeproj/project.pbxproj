@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
-		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		A526C3180AF52DA5009D5282 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A526C3170AF52DA5009D5282 /* Sparkle.framework */; };
-		A526C3DE0AF52DC1009D5282 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A526C3170AF52DA5009D5282 /* Sparkle.framework */; };
 		A526C4380AF535AE009D5282 /* EditTimes.nib in Resources */ = {isa = PBXBuildFile; fileRef = A526C4360AF535AE009D5282 /* EditTimes.nib */; };
 		A526C43C0AF535B8009D5282 /* TSEditTimesController.m in Sources */ = {isa = PBXBuildFile; fileRef = A526C43A0AF535B8009D5282 /* TSEditTimesController.m */; };
 		A526C45A0AF538F8009D5282 /* EditTimesButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A526C4590AF538F8009D5282 /* EditTimesButton.png */; };
@@ -40,6 +37,8 @@
 		A535D66D0A6CFA100084EDF6 /* ProjectView.nib in Resources */ = {isa = PBXBuildFile; fileRef = A535D66B0A6CFA100084EDF6 /* ProjectView.nib */; };
 		A535D93C0A6D09EA0084EDF6 /* circle_block.tif in Resources */ = {isa = PBXBuildFile; fileRef = A535D93B0A6D09EA0084EDF6 /* circle_block.tif */; };
 		A56F5CC00A6DBAF100576220 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56F5CBF0A6DBAF100576220 /* IOKit.framework */; };
+		A578D78E15FC320C009FC2F5 /* PSMTabBarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A578D78B15FC31DC009FC2F5 /* PSMTabBarControl.framework */; };
+		A578D78F15FC3216009FC2F5 /* PSMTabBarControl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A578D78B15FC31DC009FC2F5 /* PSMTabBarControl.framework */; };
 		A57DD41A0AA714BF007772EA /* Timeous red.icns in Resources */ = {isa = PBXBuildFile; fileRef = A57DD4180AA714BF007772EA /* Timeous red.icns */; };
 		A57DD41B0AA714C0007772EA /* Timeous.icns in Resources */ = {isa = PBXBuildFile; fileRef = A57DD4190AA714BF007772EA /* Timeous.icns */; };
 		A5841EDB0C2F381E003D0B79 /* Projects.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = A5841EDA0C2F381E003D0B79 /* Projects.xcdatamodel */; };
@@ -50,10 +49,39 @@
 		A5E90AED0D0B1AF500AA70A3 /* TSDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E90AEC0D0B1AF500AA70A3 /* TSDataController.m */; };
 		A5E90C150D0B266300AA70A3 /* ProjectsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E90C130D0B266300AA70A3 /* ProjectsWindow.xib */; };
 		A5E90DAC0D0B3E5F00AA70A3 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E90DAA0D0B3E5F00AA70A3 /* Preferences.xib */; };
-		A5E90E7E0D0B483E00AA70A3 /* PSMTabBarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E90E7D0D0B483E00AA70A3 /* PSMTabBarControl.framework */; };
-		A5E90E800D0B485200AA70A3 /* PSMTabBarControl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A5E90E7D0D0B483E00AA70A3 /* PSMTabBarControl.framework */; };
 		A5FB8C250A73F56A00B543E8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A5FB8C240A73F56A00B543E8 /* Credits.rtf */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A578D78615FC31DC009FC2F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A578D77B15FC31DC009FC2F5 /* PSMTabBarControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1AC9740486D14A00FE50C9;
+			remoteInfo = PSMTabBarControl;
+		};
+		A578D78815FC31DC009FC2F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A578D77B15FC31DC009FC2F5 /* PSMTabBarControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A251BEA00959BB5B0058BC7F;
+			remoteInfo = TabBarControlDemo;
+		};
+		A578D78A15FC31DC009FC2F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A578D77B15FC31DC009FC2F5 /* PSMTabBarControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53DF68FD067E5B5A0090B5B0;
+			remoteInfo = PSMTabBarControlFramework;
+		};
+		A578D78C15FC31FC009FC2F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A578D77B15FC31DC009FC2F5 /* PSMTabBarControl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DF68FC067E5B5A0090B5B0;
+			remoteInfo = PSMTabBarControlFramework;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A535D54F0A6CEC890084EDF6 /* Copy Frameworks */ = {
@@ -62,8 +90,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A5E90E800D0B485200AA70A3 /* PSMTabBarControl.framework in Copy Frameworks */,
-				A526C3DE0AF52DC1009D5282 /* Sparkle.framework in Copy Frameworks */,
+				A578D78F15FC3216009FC2F5 /* PSMTabBarControl.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,17 +98,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
-		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* Timeous_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timeous_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Timeous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timeous.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A526C3170AF52DA5009D5282 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		A526C4370AF535AE009D5282 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/EditTimes.nib; sourceTree = "<group>"; };
 		A526C4390AF535B8009D5282 /* TSEditTimesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSEditTimesController.h; sourceTree = "<group>"; };
 		A526C43A0AF535B8009D5282 /* TSEditTimesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSEditTimesController.m; sourceTree = "<group>"; };
@@ -117,6 +139,7 @@
 		A535D66C0A6CFA100084EDF6 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ProjectView.nib; sourceTree = "<group>"; };
 		A535D93B0A6D09EA0084EDF6 /* circle_block.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = circle_block.tif; sourceTree = "<group>"; };
 		A56F5CBF0A6DBAF100576220 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		A578D77B15FC31DC009FC2F5 /* PSMTabBarControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PSMTabBarControl.xcodeproj; path = PSMTabBarControl/PSMTabBarControl.xcodeproj; sourceTree = "<group>"; };
 		A57DD4180AA714BF007772EA /* Timeous red.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Timeous red.icns"; sourceTree = "<group>"; };
 		A57DD4190AA714BF007772EA /* Timeous.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Timeous.icns; sourceTree = "<group>"; };
 		A5841EDA0C2F381E003D0B79 /* Projects.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Projects.xcdatamodel; sourceTree = "<group>"; };
@@ -132,7 +155,6 @@
 		A5E90C140D0B266300AA70A3 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ProjectsWindow.xib; sourceTree = "<group>"; };
 		A5E90D8E0D0B3D8800AA70A3 /* TSUserDefaultKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSUserDefaultKeys.h; sourceTree = "<group>"; };
 		A5E90DAB0D0B3E5F00AA70A3 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
-		A5E90E7D0D0B483E00AA70A3 /* PSMTabBarControl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PSMTabBarControl.framework; path = PSMTabBarControl/build/Release/PSMTabBarControl.framework; sourceTree = "<group>"; };
 		A5FB8C240A73F56A00B543E8 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,10 +163,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A578D78E15FC320C009FC2F5 /* PSMTabBarControl.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				A56F5CC00A6DBAF100576220 /* IOKit.framework in Frameworks */,
-				A526C3180AF52DA5009D5282 /* Sparkle.framework in Frameworks */,
-				A5E90E7E0D0B483E00AA70A3 /* PSMTabBarControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,22 +198,10 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A5E90E7D0D0B483E00AA70A3 /* PSMTabBarControl.framework */,
-				A526C3170AF52DA5009D5282 /* Sparkle.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				A56F5CBF0A6DBAF100576220 /* IOKit.framework */,
 			);
 			name = "Linked Frameworks";
-			sourceTree = "<group>";
-		};
-		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
-				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
-				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -206,6 +215,7 @@
 		29B97314FDCFA39411CA2CEA /* Timeous */ = {
 			isa = PBXGroup;
 			children = (
+				A578D77B15FC31DC009FC2F5 /* PSMTabBarControl.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -231,7 +241,6 @@
 				A5FB8C2A0A73F5CA00B543E8 /* Images */,
 				A5FB8C240A73F56A00B543E8 /* Credits.rtf */,
 				8D1107310486CEB800E47090 /* Info.plist */,
-				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
 				A535D66B0A6CFA100084EDF6 /* ProjectView.nib */,
 				A535CF1D0A6C5C730084EDF6 /* ProjectInfo.nib */,
@@ -246,7 +255,6 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
-				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -262,6 +270,16 @@
 				A535CBAD0A6C344D0084EDF6 /* TSPeriodDay.m */,
 			);
 			name = Project;
+			sourceTree = "<group>";
+		};
+		A578D77C15FC31DC009FC2F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A578D78715FC31DC009FC2F5 /* PSMTabBarControl.palette */,
+				A578D78915FC31DC009FC2F5 /* TabBarControlDemo.app */,
+				A578D78B15FC31DC009FC2F5 /* PSMTabBarControl.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		A5841F570C2F4032003D0B79 /* Categories */ = {
@@ -332,6 +350,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A578D78D15FC31FC009FC2F5 /* PBXTargetDependency */,
 			);
 			name = Timeous;
 			productInstallPath = "$(HOME)/Applications";
@@ -346,9 +365,19 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Timeous" */;
 			compatibilityVersion = "Xcode 3.0";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Timeous */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A578D77C15FC31DC009FC2F5 /* Products */;
+					ProjectRef = A578D77B15FC31DC009FC2F5 /* PSMTabBarControl.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* Timeous */,
@@ -356,13 +385,36 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		A578D78715FC31DC009FC2F5 /* PSMTabBarControl.palette */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PSMTabBarControl.palette;
+			remoteRef = A578D78615FC31DC009FC2F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A578D78915FC31DC009FC2F5 /* TabBarControlDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TabBarControlDemo.app;
+			remoteRef = A578D78815FC31DC009FC2F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A578D78B15FC31DC009FC2F5 /* PSMTabBarControl.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PSMTabBarControl.framework;
+			remoteRef = A578D78A15FC31DC009FC2F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		8D1107290486CEB800E47090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
-				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				A535CD5C0A6C46C80084EDF6 /* Delete.tif in Resources */,
 				A535CEBA0A6C58FE0084EDF6 /* Stop.tif in Resources */,
 				A535CEBB0A6C58FE0084EDF6 /* Start.tif in Resources */,
@@ -416,15 +468,15 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				089C165DFE840E0CC02AAC07 /* English */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		A578D78D15FC31FC009FC2F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PSMTabBarControlFramework;
+			targetProxy = A578D78C15FC31FC009FC2F5 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -490,26 +542,18 @@
 				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
 				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = NO;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = Timeous;
 				WRAPPER_EXTENSION = app;
-				ZERO_LINK = NO;
 			};
 			name = Debug;
 		};
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
@@ -518,13 +562,9 @@
 					"\"$(SRCROOT)/PSMTabBarControl/build/Release\"",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)\"";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = G5;
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
 				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = NO;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = Timeous;
 				WRAPPER_EXTENSION = app;
 			};
@@ -533,24 +573,30 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				WARNING_CFLAGS = "-Wall";
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				WARNING_CFLAGS = "-Wall";
 			};
 			name = Release;
 		};

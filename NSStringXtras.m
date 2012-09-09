@@ -109,7 +109,7 @@
 	}
 	else
 	{*/
-		return [NSString stringWithFormat:@"%02d:%02d:%02d", (long)seconds/(60*60), (long)seconds/60%60, (long)seconds%60];
+		return [NSString stringWithFormat:@"%02ld:%02ld:%02ld", (long)seconds/(60*60), (long)seconds/60%60, (long)seconds%60];
 	//}
 	
 	return nil;

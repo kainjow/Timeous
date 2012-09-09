@@ -218,7 +218,7 @@
 {
 	if (item == nil)
 		return [[_project periodDays] count];
-	return [item numberOfItems];
+	return [(TSPeriodDay *)item numberOfItems];
 }
 
 - (id)outlineView:(NSOutlineView *)outlineView child:(int)index ofItem:(id)item

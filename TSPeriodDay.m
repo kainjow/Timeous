@@ -96,7 +96,7 @@
 
 - (NSString *)description
 {
-	return [NSString stringWithFormat:@"%d periods", [[self periods] count]];
+	return [NSString stringWithFormat:@"%lu periods", (unsigned long)[[self periods] count]];
 }
 
 @end

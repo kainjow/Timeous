@@ -10,7 +10,7 @@
 
 @class PSMTabBarControl, TSDataController, TSProject, TSProjectController, TSInfoController, TSEditTimesController;
 
-@interface TSMainController : NSWindowController
+@interface TSMainController : NSWindowController <NSToolbarDelegate>
 {
 	IBOutlet PSMTabBarControl *tabBar;
 	
