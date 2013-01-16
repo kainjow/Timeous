@@ -301,15 +301,12 @@
 
 - (void)deleteSheetDidEnd:(NSWindow *)sheet returnCode:(int)returnCode contextInfo:(void *)contextInfo
 {
-#if 0
 	if (returnCode == NSCancelButton)
 		return;
-	
-	NSEnumerator *rows = [[[[[self currentController] outlineView] selectedRowEnumerator] allObjects] reverseObjectEnumerator];
-	NSNumber *row;
-	while (row = [rows nextObject])
-	{
-		TSPeriod *period = [[[self currentController] outlineView] itemAtRow:[row intValue]];
+
+    NSIndexSet *rows = [[[self currentController] outlineView] selectedRowIndexes];
+    [rows enumerateIndexesWithOptions:NSEnumerationReverse usingBlock:^(NSUInteger idx, BOOL *stop){
+		TSPeriod *period = [[[self currentController] outlineView] itemAtRow:idx];
 		
 		if ([[self currentProject] currentPeriod] == period) // stop timer
 			[NSApp sendAction:@selector(startStop:) to:self from:[[[self window] toolbar] toolbarItemWithIdentifier:@"TSStartStop"]];
@@ -318,7 +315,7 @@
 		[[[period day] periods] removeObject:period];
 		
 		[[self dataController] deleteObject:period];
-	}
+	}];
 	
 	NSEnumerator *daysEnum = [[[self currentProject] periodDays] objectEnumerator];
 	TSPeriodDay *day;
@@ -328,7 +325,6 @@
 	
 	[[self currentController] updateEarningsField];
 	[[[self currentController] outlineView] reloadData];
-#endif
 }
 
 - (IBAction)editTimes:(id)sender
