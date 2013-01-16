@@ -29,7 +29,7 @@
 		useIt = YES;
 	}*/
 	
-	int hours = (leftover / hour);
+	unsigned long long hours = (leftover / hour);
 	if (hours > 0 || useIt)
 	{
 		[output appendFormat:@"%d hour%@ ", hours, (hours == 1 ? @"" : @"s")];
@@ -37,7 +37,7 @@
 		useIt = YES;
 	}
 	
-	int minutes = (leftover / minute);
+	unsigned long long minutes = (leftover / minute);
 	if (minutes > 0 || useIt)
 	{
 		[output appendFormat:@"%d minute%@ ", minutes, (minutes == 1 ? @"" : @"s")];
@@ -45,7 +45,7 @@
 		useIt = YES;
 	}
 	
-	int seconds = (leftover / second);
+	unsigned long long seconds = (leftover / second);
 	if (seconds >= 0 || useIt)
 	{
 		[output appendFormat:@"%d second%@ ", seconds, (seconds == 1 ? @"" : @"s")];
@@ -134,18 +134,18 @@
 		useIt = YES;
 	}*/
 	
-	int hours = (leftover / hour);
+	unsigned long long hours = (leftover / hour);
 	if (hours > 0 || useIt)
 	{
-		[output appendFormat:@"%d hour%@ ", hours, (hours == 1 ? @"" : @"s")];
+		[output appendFormat:@"%llu hour%@ ", hours, (hours == 1 ? @"" : @"s")];
 		leftover = (leftover % hour);
 		useIt = YES;
 	}
 	
-	int minutes = (leftover / minute);
+	unsigned long long minutes = (leftover / minute);
 	if (minutes > 0 || useIt)
 	{
-		[output appendFormat:@"%d min%@ ", minutes, (minutes == 1 ? @"" : @"s")];
+		[output appendFormat:@"%llu min%@ ", minutes, (minutes == 1 ? @"" : @"s")];
 		leftover = (leftover % minute);
 		useIt = YES;
 	}

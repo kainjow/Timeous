@@ -35,7 +35,7 @@
 	unsigned int numberOfActiveProjects = [_mainController numberOfActiveProjects];
 	if (numberOfActiveProjects)
 	{
-		int result = NSRunAlertPanel(@"Are you sure you want to quit?", @"There are one or more projects currently running. Quitting now still stop the timer. Are you sure you still want to quit?", @"Quit", @"Cancel", nil);
+		NSInteger result = NSRunAlertPanel(@"Are you sure you want to quit?", @"There are one or more projects currently running. Quitting now still stop the timer. Are you sure you still want to quit?", @"Quit", @"Cancel", nil);
 		if (result == NSCancelButton)
 			return NSTerminateCancel;
 	}

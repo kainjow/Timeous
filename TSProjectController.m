@@ -126,7 +126,7 @@
 	[self updateEarningsField];
 
 	// expand last item..
-	int c = [[_project periodDays] count];
+	NSUInteger c = [[_project periodDays] count];
 	if (c > 0)
 		[periodsOutlineView expandItem:[[_project periodDays] objectAtIndex:c-1]];
 }
