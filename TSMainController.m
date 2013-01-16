@@ -443,28 +443,19 @@
 
 - (void)exportText:(id)sender
 {
-#if 0
 	NSSavePanel *savePanel = [NSSavePanel savePanel];
 	[savePanel setAllowedFileTypes:[NSArray arrayWithObject:@"txt"]];
-	[savePanel beginSheetForDirectory:nil
-								 file:[[self currentProject] valueForKey:TSProjectNameValue]
-					   modalForWindow:[self window]
-						modalDelegate:self
-					   didEndSelector:@selector(savePanelDidEnd:returnCode:contextInfo:)
-						  contextInfo:NULL];
-#endif
-}
-
-- (void)savePanelDidEnd:(NSSavePanel *)sheet returnCode:(int)returnCode contextInfo:(void *)contextInfo
-{
-	if (returnCode == NSOKButton)
-	{
-		NSString *projectText = [self exportCurrentProjectAsText];
-		NSError *err = nil;
-		[projectText writeToFile:[[sheet URL] path] atomically:YES encoding:NSUTF8StringEncoding error:&err];
-		if (err)
-			[NSApp presentError:err];
-	}
+    [savePanel setNameFieldStringValue:[[self currentProject] valueForKey:TSProjectNameValue]];
+    [savePanel beginSheetModalForWindow:[self window] completionHandler:^(NSInteger result){
+        if (result == NSFileHandlingPanelOKButton)
+        {
+            NSString *projectText = [self exportCurrentProjectAsText];
+            NSError *err = nil;
+            [projectText writeToURL:[savePanel URL] atomically:YES encoding:NSUTF8StringEncoding error:&err];
+            if (err)
+                [NSApp presentError:err];
+        }
+    }];
 }
 
 #pragma mark -
