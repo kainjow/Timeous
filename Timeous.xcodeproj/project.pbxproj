@@ -37,10 +37,10 @@
 		A535D66D0A6CFA100084EDF6 /* ProjectView.nib in Resources */ = {isa = PBXBuildFile; fileRef = A535D66B0A6CFA100084EDF6 /* ProjectView.nib */; };
 		A535D93C0A6D09EA0084EDF6 /* circle_block.tif in Resources */ = {isa = PBXBuildFile; fileRef = A535D93B0A6D09EA0084EDF6 /* circle_block.tif */; };
 		A56F5CC00A6DBAF100576220 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56F5CBF0A6DBAF100576220 /* IOKit.framework */; };
-		A578D78E15FC320C009FC2F5 /* PSMTabBarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A578D78B15FC31DC009FC2F5 /* PSMTabBarControl.framework */; };
-		A578D78F15FC3216009FC2F5 /* PSMTabBarControl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A578D78B15FC31DC009FC2F5 /* PSMTabBarControl.framework */; };
 		A57DD41A0AA714BF007772EA /* Timeous red.icns in Resources */ = {isa = PBXBuildFile; fileRef = A57DD4180AA714BF007772EA /* Timeous red.icns */; };
 		A57DD41B0AA714C0007772EA /* Timeous.icns in Resources */ = {isa = PBXBuildFile; fileRef = A57DD4190AA714BF007772EA /* Timeous.icns */; };
+		A57FB2AF16A6727E009B4FAE /* PSMTabBarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57FB2AC16A6721A009B4FAE /* PSMTabBarControl.framework */; };
+		A57FB2B216A6733C009B4FAE /* PSMTabBarControl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A57FB2AC16A6721A009B4FAE /* PSMTabBarControl.framework */; };
 		A5841EDB0C2F381E003D0B79 /* Projects.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = A5841EDA0C2F381E003D0B79 /* Projects.xcdatamodel */; };
 		A58420C00C2F5C65003D0B79 /* NSToolbarAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A58420BE0C2F5C65003D0B79 /* NSToolbarAdditions.m */; };
 		A597221B0AB31F2A007BBFC1 /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = A597221A0AB31F2A007BBFC1 /* text.png */; };
@@ -53,30 +53,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A578D78615FC31DC009FC2F5 /* PBXContainerItemProxy */ = {
+		A57FB2AB16A6721A009B4FAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A578D77B15FC31DC009FC2F5 /* PSMTabBarControl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8D1AC9740486D14A00FE50C9;
-			remoteInfo = PSMTabBarControl;
-		};
-		A578D78815FC31DC009FC2F5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A578D77B15FC31DC009FC2F5 /* PSMTabBarControl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A251BEA00959BB5B0058BC7F;
-			remoteInfo = TabBarControlDemo;
-		};
-		A578D78A15FC31DC009FC2F5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A578D77B15FC31DC009FC2F5 /* PSMTabBarControl.xcodeproj */;
+			containerPortal = A57FB2A116A6721A009B4FAE /* PSMTabBarControl.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 53DF68FD067E5B5A0090B5B0;
 			remoteInfo = PSMTabBarControlFramework;
 		};
-		A578D78C15FC31FC009FC2F5 /* PBXContainerItemProxy */ = {
+		A57FB2AD16A6721A009B4FAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A578D77B15FC31DC009FC2F5 /* PSMTabBarControl.xcodeproj */;
+			containerPortal = A57FB2A116A6721A009B4FAE /* PSMTabBarControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BD4395A1185147D00DB4AC3;
+			remoteInfo = PSMTabBarControlDemo;
+		};
+		A57FB2B016A67287009B4FAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A57FB2A116A6721A009B4FAE /* PSMTabBarControl.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 53DF68FC067E5B5A0090B5B0;
 			remoteInfo = PSMTabBarControlFramework;
@@ -90,7 +83,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A578D78F15FC3216009FC2F5 /* PSMTabBarControl.framework in Copy Frameworks */,
+				A57FB2B216A6733C009B4FAE /* PSMTabBarControl.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,9 +132,9 @@
 		A535D66C0A6CFA100084EDF6 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ProjectView.nib; sourceTree = "<group>"; };
 		A535D93B0A6D09EA0084EDF6 /* circle_block.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = circle_block.tif; sourceTree = "<group>"; };
 		A56F5CBF0A6DBAF100576220 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
-		A578D77B15FC31DC009FC2F5 /* PSMTabBarControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PSMTabBarControl.xcodeproj; path = PSMTabBarControl/PSMTabBarControl.xcodeproj; sourceTree = "<group>"; };
 		A57DD4180AA714BF007772EA /* Timeous red.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Timeous red.icns"; sourceTree = "<group>"; };
 		A57DD4190AA714BF007772EA /* Timeous.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Timeous.icns; sourceTree = "<group>"; };
+		A57FB2A116A6721A009B4FAE /* PSMTabBarControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PSMTabBarControl.xcodeproj; path = libs/PSMTabBarControl/PSMTabBarControl.xcodeproj; sourceTree = "<group>"; };
 		A5841EDA0C2F381E003D0B79 /* Projects.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = Projects.xcdatamodel; sourceTree = "<group>"; };
 		A58420BD0C2F5C65003D0B79 /* NSToolbarAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSToolbarAdditions.h; sourceTree = "<group>"; };
 		A58420BE0C2F5C65003D0B79 /* NSToolbarAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSToolbarAdditions.m; sourceTree = "<group>"; };
@@ -163,7 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A578D78E15FC320C009FC2F5 /* PSMTabBarControl.framework in Frameworks */,
+				A57FB2AF16A6727E009B4FAE /* PSMTabBarControl.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				A56F5CC00A6DBAF100576220 /* IOKit.framework in Frameworks */,
 			);
@@ -215,7 +208,7 @@
 		29B97314FDCFA39411CA2CEA /* Timeous */ = {
 			isa = PBXGroup;
 			children = (
-				A578D77B15FC31DC009FC2F5 /* PSMTabBarControl.xcodeproj */,
+				A57FB2A116A6721A009B4FAE /* PSMTabBarControl.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -272,12 +265,11 @@
 			name = Project;
 			sourceTree = "<group>";
 		};
-		A578D77C15FC31DC009FC2F5 /* Products */ = {
+		A57FB2A216A6721A009B4FAE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A578D78715FC31DC009FC2F5 /* PSMTabBarControl.palette */,
-				A578D78915FC31DC009FC2F5 /* TabBarControlDemo.app */,
-				A578D78B15FC31DC009FC2F5 /* PSMTabBarControl.framework */,
+				A57FB2AC16A6721A009B4FAE /* PSMTabBarControl.framework */,
+				A57FB2AE16A6721A009B4FAE /* PSMTabBarControlDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -350,7 +342,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A578D78D15FC31FC009FC2F5 /* PBXTargetDependency */,
+				A57FB2B116A67287009B4FAE /* PBXTargetDependency */,
 			);
 			name = Timeous;
 			productInstallPath = "$(HOME)/Applications";
@@ -377,8 +369,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = A578D77C15FC31DC009FC2F5 /* Products */;
-					ProjectRef = A578D77B15FC31DC009FC2F5 /* PSMTabBarControl.xcodeproj */;
+					ProductGroup = A57FB2A216A6721A009B4FAE /* Products */;
+					ProjectRef = A57FB2A116A6721A009B4FAE /* PSMTabBarControl.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -389,25 +381,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		A578D78715FC31DC009FC2F5 /* PSMTabBarControl.palette */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = PSMTabBarControl.palette;
-			remoteRef = A578D78615FC31DC009FC2F5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A578D78915FC31DC009FC2F5 /* TabBarControlDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = TabBarControlDemo.app;
-			remoteRef = A578D78815FC31DC009FC2F5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A578D78B15FC31DC009FC2F5 /* PSMTabBarControl.framework */ = {
+		A57FB2AC16A6721A009B4FAE /* PSMTabBarControl.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = PSMTabBarControl.framework;
-			remoteRef = A578D78A15FC31DC009FC2F5 /* PBXContainerItemProxy */;
+			remoteRef = A57FB2AB16A6721A009B4FAE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A57FB2AE16A6721A009B4FAE /* PSMTabBarControlDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = PSMTabBarControlDemo.app;
+			remoteRef = A57FB2AD16A6721A009B4FAE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -472,10 +457,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A578D78D15FC31FC009FC2F5 /* PBXTargetDependency */ = {
+		A57FB2B116A67287009B4FAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PSMTabBarControlFramework;
-			targetProxy = A578D78C15FC31FC009FC2F5 /* PBXContainerItemProxy */;
+			targetProxy = A57FB2B016A67287009B4FAE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -536,6 +521,7 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/libs/PSMTabBarControl/build/Debug/";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = Timeous;
@@ -547,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/libs/PSMTabBarControl/build/Release";
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = Timeous;
 				WRAPPER_EXTENSION = app;

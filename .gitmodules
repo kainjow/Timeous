@@ -1,0 +1,3 @@
+[submodule "libs/PSMTabBarControl"]
+	path = libs/PSMTabBarControl
+	url = git://github.com/dorianj/PSMTabBarControl.git
