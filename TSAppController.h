@@ -18,7 +18,6 @@
 	NSWindowController *_prefsController;
 }
 
-- (IBAction)import:(id)sender;
 - (IBAction)sendFeedback:(id)sender;
 - (IBAction)showPrefs:(id)sender;
 

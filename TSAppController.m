@@ -56,11 +56,6 @@
 	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"mailto:kainjow@kainjow.com?subject=Timeous%20Feedback"]];
 }
 
-- (IBAction)import:(id)sender
-{
-	[_mainController import:sender];
-}
-
 - (IBAction)showPrefs:(id)sender
 {
 	if (_prefsController == nil)

@@ -24,9 +24,6 @@
 - (NSEntityDescription *)projectEntity;
 - (void)updateDockIcon;
 - (NSEnumerator *)tabViewItemsEnumerator;
-
-- (void)importTimeCardPlist:(NSString *)path;
-- (void)importTimeousLegacyData;
 @end
 
 @implementation TSMainController
@@ -45,8 +42,6 @@
 {
 	if (self = [super initWithWindowNibName:@"ProjectsWindow" owner:self])
 	{
-		srandom(time(NULL));
-
 		[self setDataController:nil];
 
 		_timeousGray = [[NSImage imageNamed:@"Timeous"] retain];
@@ -100,9 +95,6 @@
 	
 	while (proj = [projectsEnum nextObject])
 		[self newTabForProject:proj];
-	
-	// import legacy data (MUST be done after the normal project reading)
-	[self importTimeousLegacyData];
 }
 
 - (void)awakeFromNib
@@ -132,6 +124,7 @@
 	
 	// setup the tab bar's style and close alert
 	[tabBar setStyleNamed:@"Unified"];
+#if 0
 	[tabBar setDelegate:self];
 	NSAlert *closeAlert = [NSAlert alertWithMessageText:@"Are you sure you want to remove this project?"
 										  defaultButton:@"Yes"
@@ -141,6 +134,7 @@
 	[closeAlert setAlertStyle:NSCriticalAlertStyle];
 	[tabBar setCloseAlert:closeAlert];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveData) name:PSMTabBarControlDidFinishDragNotification object:tabBar];
+#endif
 
 	// setup the tabs
 	[self setupProjectTabs];
@@ -318,6 +312,7 @@
 
 - (void)deleteSheetDidEnd:(NSWindow *)sheet returnCode:(int)returnCode contextInfo:(void *)contextInfo
 {
+#if 0
 	if (returnCode == NSCancelButton)
 		return;
 	
@@ -344,6 +339,7 @@
 	
 	[[self currentController] updateEarningsField];
 	[[[self currentController] outlineView] reloadData];
+#endif
 }
 
 - (IBAction)editTimes:(id)sender
@@ -386,33 +382,6 @@
 	[[self currentController] updateEarningsField];
 	[[[tabBar tabView] selectedTabViewItem] setLabel:[[self currentProject] valueForKey:TSProjectNameValue]];
 	[self saveData];
-}
-
-- (void)import:(id)sender
-{
-	NSOpenPanel *op = [NSOpenPanel openPanel];
-	[op setCanChooseDirectories:NO];
-	[op setCanChooseFiles:YES];
-	[op setCanCreateDirectories:NO];
-	[op setAllowsMultipleSelection:NO];
-	[op beginSheetForDirectory:nil
-						  file:nil
-						 types:[NSArray arrayWithObject:@"plist"]
-				modalForWindow:[NSApp mainWindow]
-				 modalDelegate:self
-				didEndSelector:@selector(importPanelDidEnd:returnCode:contextInfo:)
-				   contextInfo:NULL];
-}
-
-- (void)importPanelDidEnd:(NSOpenPanel *)panel returnCode:(int)returnCode contextInfo:(void *)contextInfo
-{
-	if (returnCode == NSOKButton)
-	{
-		[self importTimeCardPlist:[[panel URL] path]];
-		
-		[[[self currentController] outlineView] reloadData];
-		[[self currentController] updateEarningsField];
-	}
 }
 
 #pragma mark -
@@ -485,6 +454,7 @@
 
 - (void)exportText:(id)sender
 {
+#if 0
 	NSSavePanel *savePanel = [NSSavePanel savePanel];
 	[savePanel setAllowedFileTypes:[NSArray arrayWithObject:@"txt"]];
 	[savePanel beginSheetForDirectory:nil
@@ -493,6 +463,7 @@
 						modalDelegate:self
 					   didEndSelector:@selector(savePanelDidEnd:returnCode:contextInfo:)
 						  contextInfo:NULL];
+#endif
 }
 
 - (void)savePanelDidEnd:(NSSavePanel *)sheet returnCode:(int)returnCode contextInfo:(void *)contextInfo
@@ -618,113 +589,6 @@
 	// project was removed via the close tab. let's delete it from Core Data
 	[[self dataController] deleteObject:[[[tabViewItem identifier] content] project]];
 	
-	[self saveData];
-}
-
-#pragma mark -
-#pragma mark Importing
-
-- (void)importTimeCardPlist:(NSString *)path
-{
-	// not supported anymore?
-	
-	/*NSDictionary *d = [NSDictionary dictionaryWithContentsOfFile:path];
-	 if (!d || [d count] == 0)
-	 return;
-	 
-	 NSArray *days = [d objectForKey:@"days"];
-	 if (!days || [days count] == 0)
-	 return;
-	 
-	 NSEnumerator *daysEnum = [days objectEnumerator];
-	 NSDictionary *day = nil;
-	 while (day = [daysEnum nextObject])
-	 {
-	 if ([day isKindOfClass:[NSDictionary class]] == NO)
-	 continue;
-	 
-	 NSEnumerator *periodsEnum = [[day objectForKey:@"periods"] objectEnumerator];
-	 NSDictionary *p;
-	 while (p = [periodsEnum nextObject])
-	 {
-	 NSCalendarDate *start = [NSCalendarDate dateWithString:[[p objectForKey:@"start"] description]];
-	 NSCalendarDate *end = [NSCalendarDate dateWithString:[[p objectForKey:@"end"] description]];
-	 
-	 TSPeriodDay *day = [[self currentProject] periodDayForDate:start];
-	 TSPeriod *period = [[TSPeriod alloc] init];
-	 [period setStart:start];
-	 [period setEnd:end];
-	 [period setDay:day];
-	 [[day periods] addObject:period];
-	 [period release];
-	 }
-	 }*/
-}
-
-- (void)importTimeousLegacyData
-{
-	NSString *path = [@"~/Library/Application Support/Timeous/data.plist" stringByStandardizingPath];
-	NSString *moveToPath = [@"~/Library/Application Support/Timeous/data_original.plist" stringByStandardizingPath];
-	
-	NSFileManager *fm = [NSFileManager defaultManager];
-	BOOL hasData = NO;
-	hasData = [fm fileExistsAtPath:path];
-		
-	if (!hasData)
-		return;
-	
-	TSDataController *dataController = [self dataController];
-	NSArray *projects = [NSMutableArray arrayWithContentsOfFile:path];
-	NSEnumerator *projectsEnum = [projects objectEnumerator];
-	NSDictionary *d = nil;
-	
-	while (d = [projectsEnum nextObject])
-	{
-		TSProject *project = [dataController newProject];
-
-		[project setValue:([d objectForKey:@"Name"] ? [d objectForKey:@"Name"] : @"Untitled") forKey:TSProjectNameValue];
-		[project setValue:[d objectForKey:@"Rate"] forKey:TSProjectRateValue];
-		[project setValue:[d objectForKey:@"Tax"] forKey:TSProjectTaxValue];
-		
-		/*NSNumber *uid = [d objectForKey:@"UID"];
-		if (uid)
-			[project setUID:[uid intValue]];
-		else
-			[self assignNewUIDToProject:project];*/
-
-		NSArray *periods = [d objectForKey:@"Periods"];
-		NSEnumerator *periodsEnum = [periods objectEnumerator];
-		NSDictionary *p = nil;
-		
-		while (p = [periodsEnum nextObject])
-		{
-			NSCalendarDate *start = [NSCalendarDate dateWithString:[[p objectForKey:@"Start"] description]];
-			NSCalendarDate *end = [NSCalendarDate dateWithString:[[p objectForKey:@"End"] description]];
-
-			TSPeriod *period = [dataController newPeriod];
-			[period setStart:start];
-			[period setEnd:end];
-			[period setNotes:[p objectForKey:@"Notes"]];
-
-			TSPeriodDay *day = [project periodDayForDate:[period start]];
-			[period setDay:day];
-			[[day periods] addObject:period];
-			[[project valueForKey:TSProjectPeriodsValue] addObject:period];
-
-			[period release];
-		}
-
-		[project setCurrentPeriod:nil];
-
-		[self newTabForProject:project];
-	}
-	
-	// move the original file so we don't import it again
-	if ([fm fileExistsAtPath:moveToPath])
-		NSLog(@"ERROR: File exists at: %@", moveToPath);
-	else
-        [fm moveItemAtPath:path toPath:moveToPath error:nil];
-
 	[self saveData];
 }
 

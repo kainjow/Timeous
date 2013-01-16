@@ -27,8 +27,6 @@
 - (void)setDataController:(TSDataController *)dataController;
 - (TSDataController *)dataController;
 
-- (void)import:(id)sender;
-
 - (void)saveData;
 
 - (TSProjectController *)currentController;
