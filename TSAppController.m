@@ -51,6 +51,11 @@
 #pragma mark -
 #pragma mark Actions
 
+- (IBAction)doNewProject:(id)sender
+{
+    [_mainController newTab:nil];
+}
+
 - (IBAction)sendFeedback:(id)sender
 {
 	[[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"mailto:kainjow@kainjow.com?subject=Timeous%20Feedback"]];

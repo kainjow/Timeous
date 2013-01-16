@@ -18,6 +18,7 @@
 	NSWindowController *_prefsController;
 }
 
+- (IBAction)doNewProject:(id)sender;
 - (IBAction)sendFeedback:(id)sender;
 - (IBAction)showPrefs:(id)sender;
 
