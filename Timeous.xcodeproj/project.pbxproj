@@ -36,7 +36,6 @@
 		A535D6580A6CF90B0084EDF6 /* TSProjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = A535D6560A6CF90B0084EDF6 /* TSProjectController.m */; };
 		A535D66D0A6CFA100084EDF6 /* ProjectView.nib in Resources */ = {isa = PBXBuildFile; fileRef = A535D66B0A6CFA100084EDF6 /* ProjectView.nib */; };
 		A535D93C0A6D09EA0084EDF6 /* circle_block.tif in Resources */ = {isa = PBXBuildFile; fileRef = A535D93B0A6D09EA0084EDF6 /* circle_block.tif */; };
-		A56F5CC00A6DBAF100576220 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56F5CBF0A6DBAF100576220 /* IOKit.framework */; };
 		A57DD41A0AA714BF007772EA /* Timeous red.icns in Resources */ = {isa = PBXBuildFile; fileRef = A57DD4180AA714BF007772EA /* Timeous red.icns */; };
 		A57DD41B0AA714C0007772EA /* Timeous.icns in Resources */ = {isa = PBXBuildFile; fileRef = A57DD4190AA714BF007772EA /* Timeous.icns */; };
 		A57FB2AF16A6727E009B4FAE /* PSMTabBarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57FB2AC16A6721A009B4FAE /* PSMTabBarControl.framework */; };
@@ -131,7 +130,6 @@
 		A535D6560A6CF90B0084EDF6 /* TSProjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSProjectController.m; sourceTree = "<group>"; };
 		A535D66C0A6CFA100084EDF6 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ProjectView.nib; sourceTree = "<group>"; };
 		A535D93B0A6D09EA0084EDF6 /* circle_block.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = circle_block.tif; sourceTree = "<group>"; };
-		A56F5CBF0A6DBAF100576220 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
 		A57DD4180AA714BF007772EA /* Timeous red.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "Timeous red.icns"; sourceTree = "<group>"; };
 		A57DD4190AA714BF007772EA /* Timeous.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Timeous.icns; sourceTree = "<group>"; };
 		A57FB2A116A6721A009B4FAE /* PSMTabBarControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PSMTabBarControl.xcodeproj; path = libs/PSMTabBarControl/PSMTabBarControl.xcodeproj; sourceTree = "<group>"; };
@@ -158,7 +156,6 @@
 			files = (
 				A57FB2AF16A6727E009B4FAE /* PSMTabBarControl.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				A56F5CC00A6DBAF100576220 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
-				A56F5CBF0A6DBAF100576220 /* IOKit.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
