@@ -32,7 +32,7 @@
 	unsigned long long hours = (leftover / hour);
 	if (hours > 0 || useIt)
 	{
-		[output appendFormat:@"%d hour%@ ", hours, (hours == 1 ? @"" : @"s")];
+		[output appendFormat:@"%llu hour%@ ", hours, (hours == 1 ? @"" : @"s")];
 		leftover = (leftover % hour);
 		useIt = YES;
 	}
@@ -40,15 +40,15 @@
 	unsigned long long minutes = (leftover / minute);
 	if (minutes > 0 || useIt)
 	{
-		[output appendFormat:@"%d minute%@ ", minutes, (minutes == 1 ? @"" : @"s")];
+		[output appendFormat:@"%llu minute%@ ", minutes, (minutes == 1 ? @"" : @"s")];
 		leftover = (leftover % minute);
 		useIt = YES;
 	}
 	
 	unsigned long long seconds = (leftover / second);
-	if (seconds >= 0 || useIt)
+	if (seconds > 0 || useIt)
 	{
-		[output appendFormat:@"%d second%@ ", seconds, (seconds == 1 ? @"" : @"s")];
+		[output appendFormat:@"%llu second%@ ", seconds, (seconds == 1 ? @"" : @"s")];
 		leftover = (leftover % second);
 		useIt = YES;
 	}

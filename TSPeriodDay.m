@@ -81,7 +81,7 @@
 
 - (int)numberOfItems
 {
-	return [[self periods] count];
+	return (int)[[self periods] count];
 }
 
 - (unsigned long long)totalSeconds
