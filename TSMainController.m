@@ -106,8 +106,7 @@
 	[toolbar setDelegate:self];
 	[toolbar setAllowsUserCustomization:YES];
 	[toolbar setAutosavesConfiguration:YES];
-	if ([toolbar respondsToSelector:@selector(setShowsBaselineSeparator:)])
-		[toolbar setShowsBaselineSeparator:YES];
+    [toolbar setShowsBaselineSeparator:YES];
 	[[self window] setToolbar:toolbar];
 	
 	// save the window position
