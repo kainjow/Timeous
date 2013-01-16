@@ -13,7 +13,6 @@
 #import "TSProject.h"
 #import "TSPeriodDay.h"
 #import "TSPeriod.h"
-#import <PSMTabBarControl/PSMTabBarControl.h>
 #import "NSStringXtras.h"
 #import "TSEditTimesController.h"
 #import "NSToolbarAdditions.h"
@@ -124,17 +123,7 @@
 	
 	// setup the tab bar's style and close alert
 	[tabBar setStyleNamed:@"Unified"];
-#if 0
 	[tabBar setDelegate:self];
-	NSAlert *closeAlert = [NSAlert alertWithMessageText:@"Are you sure you want to remove this project?"
-										  defaultButton:@"Yes"
-										alternateButton:@"No"
-											otherButton:nil
-							  informativeTextWithFormat:@"Removing a project will delete all associated data and cannot be undone."];
-	[closeAlert setAlertStyle:NSCriticalAlertStyle];
-	[tabBar setCloseAlert:closeAlert];
-	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(saveData) name:PSMTabBarControlDidFinishDragNotification object:tabBar];
-#endif
 
 	// setup the tabs
 	[self setupProjectTabs];
@@ -582,6 +571,21 @@
 	
 	NSString *lastProjectName = [[[[tabViewItem identifier] content] project] valueForKey:TSProjectNameValue];
 	[[NSUserDefaults standardUserDefaults] setObject:lastProjectName forKey:TS_LAST_PROJECT];
+}
+
+- (BOOL)tabView:(NSTabView *)aTabView shouldCloseTabViewItem:(NSTabViewItem *)tabViewItem
+{
+    [self saveData]; // just to be sure
+	NSAlert *closeAlert = [NSAlert alertWithMessageText:@"Are you sure you want to remove this project?"
+										  defaultButton:@"Cancel"
+										alternateButton:@"Remove"
+											otherButton:nil
+							  informativeTextWithFormat:@"Removing a project will delete all associated data and cannot be undone."];
+	[closeAlert setAlertStyle:NSCriticalAlertStyle];
+    if ([closeAlert runModal] == NSAlertAlternateReturn) {
+        return YES;
+    }
+    return NO;
 }
 
 - (void)tabView:(NSTabView *)aTabView didCloseTabViewItem:(NSTabViewItem *)tabViewItem

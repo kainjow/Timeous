@@ -7,10 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <PSMTabBarControl/PSMTabBarControl.h>
 
-@class PSMTabBarControl, TSDataController, TSProject, TSProjectController, TSInfoController, TSEditTimesController;
+@class TSDataController, TSProject, TSProjectController, TSInfoController, TSEditTimesController;
 
-@interface TSMainController : NSWindowController <NSToolbarDelegate>
+@interface TSMainController : NSWindowController <NSToolbarDelegate, PSMTabBarControlDelegate>
 {
 	IBOutlet PSMTabBarControl *tabBar;
 	
