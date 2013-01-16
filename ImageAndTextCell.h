@@ -8,13 +8,7 @@
 
 @interface ImageAndTextCell : NSTextFieldCell {
 @private
-    NSImage	*image;
+    NSImageCell *imageCell;
 }
-
-- (void)setImage:(NSImage *)anImage;
-- (NSImage *)image;
-
-- (void)drawWithFrame:(NSRect)cellFrame inView:(NSView *)controlView;
-- (NSSize)cellSize;
 
 @end
