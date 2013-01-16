@@ -3,7 +3,7 @@
 //  Timeous
 //
 //  Created by Kevin Wojniak on 9/9/06.
-//  Copyright 2006 __MyCompanyName__. All rights reserved.
+//  Copyright 2006 Kevin Wojniak. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

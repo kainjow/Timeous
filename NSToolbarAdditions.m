@@ -3,7 +3,7 @@
 //  Timeous
 //
 //  Created by Kevin Wojniak on 6/24/07.
-//  Copyright 2007 __MyCompanyName__. All rights reserved.
+//  Copyright 2007 Kevin Wojniak. All rights reserved.
 //
 
 #import "NSToolbarAdditions.h"
