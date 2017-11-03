@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string>Timeous</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.kainjow.Timeous</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -20,10 +20,10 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>0.7</string>
-	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>© Kevin Wojniak, 2006-2013</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>

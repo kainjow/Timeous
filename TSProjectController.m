@@ -26,8 +26,8 @@
 	[NSDateFormatter setDefaultFormatterBehavior:NSDateFormatterBehavior10_4];
 	
 	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-	[dateFormatter setDateStyle:kCFDateFormatterNoStyle];
-	[dateFormatter setTimeStyle:kCFDateFormatterShortStyle];
+	[dateFormatter setDateStyle:NSDateFormatterNoStyle];
+	[dateFormatter setTimeStyle:NSDateFormatterShortStyle];
 	NSString *formattedString = [dateFormatter stringFromDate:self];
 	[dateFormatter release];
 	return formattedString;
